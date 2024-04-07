@@ -1,0 +1,57 @@
+.l-header {
+  position: fixed;
+  width: 80%;
+  padding: 50px 0;
+  @include fbox(row, center, space-between);
+  &__hamburger {
+    display: none;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    h1 {
+      margin-right: 30px;
+    }
+  }
+  &__navbar {
+    ul {
+      display: flex;
+      gap: 50px;
+      a {
+        @include fontRoboto();
+        padding-bottom: 5px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 3px;
+          background-color: $colorBrown;
+          transition: width 0.5s ease-in-out;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__login {
+    display: flex;
+    gap: 20px;
+    .login-btn {
+      padding: 20px 40px;
+      a {
+        @include fontRoboto();
+      }
+    }
+    .active {
+      border: 2px solid $colorWhite;
+      border-radius: 50px;
+    }
+  }
+}

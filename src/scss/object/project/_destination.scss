@@ -1,0 +1,20 @@
+.destination {
+  margin-top: 191px;
+  @include fbox();
+  &__txt {
+    @include fbox();
+    gap: 20px;
+    h2 {
+      width: 408px;
+      @include fontArchivo(700);
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  &__container {
+    margin-top: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+  }
+}

@@ -1,0 +1,66 @@
+.footer {
+  margin-top: 150px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  background-color: $colorPink;
+  &-tag {
+    display: flex;
+    gap: 50px;
+  }
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+  &-info {
+    width: 615px;
+    h4,
+    h5 {
+      @include fontArchivo(700);
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    p {
+      @include fontRoboto();
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+  }
+  &-menu {
+    &__bloc {
+      h4 {
+        @include fontArchivo(700);
+        font-size: 18px;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          margin-top: 12px;
+          a {
+            color: $colorBlack;
+            @include fontRoboto();
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  &__download {
+    h5 {
+      @include fontArchivo(700);
+      font-size: 18px;
+    }
+    ul {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+  }
+  .copyright {
+    padding: 50px;
+    text-align: center;
+    @include fontRoboto(700);
+    font-size: 16px;
+  }
+}

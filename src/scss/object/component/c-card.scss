@@ -1,0 +1,54 @@
+.c-card {
+  width: 357px;
+  @include fbox();
+  background-color: $colorWhite;
+  h3 {
+    @include fontArchivo(600);
+  }
+  p {
+    @include fontRoboto();
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+  }
+  &--service {
+    gap: 20px;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  &--des {
+    width: calc(100% / 4 - 20px);
+    border-radius: 10px;
+    padding: 35px;
+    .des-logo {
+      width: 277px;
+      @include fbox();
+      position: relative;
+      svg {
+        width: 100%;
+      }
+    }
+    .des-price {
+      width: 145px;
+      margin-top: -34px;
+      background-color: $colorWhite;
+      padding: 20px;
+      border-radius: 20px;
+      z-index: 20;
+      font-size: 16px;
+      color: $colorBrown;
+    }
+    .des-box {
+      @include fbox();
+      gap: 10px;
+      h3 {
+        margin-top: 20px;
+      }
+    }
+    .des-likebtn {
+      position: absolute;
+      top: 25px;
+      right: 10px;
+    }
+  }
+}

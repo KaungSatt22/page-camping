@@ -1,22 +1,19 @@
 /* normalize.css
 ------------------------ */
-@import 'normalize.css/normalize.css';
 
-/* ==========================================================================
-  Foundation
-========================================================================== */
+@import "../scss/foundation/reset";
+@import "../scss/foundation/color";
+@import "../scss/object/utility/mixin";
+@import "../scss/foundation/base";
+@import "../scss/object/component/c-btn";
+@import "../scss/object/component/c-card";
+@import "../scss/layout/wrapper";
 
-/* ==========================================================================
-  Foundation
-========================================================================== */
-
-/* ==========================================================================
-  Project
-========================================================================== */
-
-/* ==========================================================================
-  Component
-========================================================================== */
-h1 {
-  color: #f00;
-}
+@import "../scss/layout/header";
+@import "../scss/object/project/mainvisual";
+@import "../scss/object/project/service";
+@import "../scss/object/project/destination";
+@import "../scss/object/project/top";
+@import "../scss/object/project/subscribe";
+@import "../scss/object/project/footer";
+@import "../scss/object/utility/media";

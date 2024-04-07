@@ -1,0 +1,32 @@
+.c-btn {
+  a {
+    padding: 20px;
+    @include fontRoboto();
+    display: inline-block;
+    text-align: center;
+  }
+  &--discovery {
+    background-color: $colorBrown;
+    border-radius: 50px;
+    a {
+      width: 205px;
+    }
+  }
+  &--des {
+    background-color: #8d8d8d;
+    border-radius: 50px;
+    margin-top: 20px;
+    a {
+      width: 185px;
+    }
+  }
+  &--viewmore {
+    border: 2px solid $colorBrown;
+    border-radius: 50px;
+    margin-top: 50px;
+    a {
+      width: 205px;
+      color: $colorBrown;
+    }
+  }
+}

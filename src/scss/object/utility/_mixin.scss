@@ -1,0 +1,16 @@
+@mixin fontRoboto($weight: 400) {
+  font-family: "Roboto", sans-serif;
+  font-weight: $weight;
+}
+
+@mixin fontArchivo($weight: 400) {
+  font-family: "Archivo", sans-serif;
+  font-weight: $weight;
+}
+
+@mixin fbox($dir: column, $align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $dir;
+}

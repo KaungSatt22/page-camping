@@ -1,0 +1,47 @@
+.subscribe {
+  margin-top: 157px;
+  @include fbox(row, center, space-between);
+  padding: 20px;
+  border-radius: 50px;
+  background-color: $colorPink;
+  &__txt {
+    margin-left: 50px;
+    h2 {
+      @include fontArchivo(700);
+      font-size: 40px;
+    }
+    p {
+      width: 486px;
+      @include fontRoboto();
+      margin: 20px 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  &__input {
+    position: relative;
+    @include fbox();
+    input {
+      width: 616px;
+      border: 0;
+      padding: 20px 40px;
+      font-size: 18px;
+      outline: none;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+    .email {
+      position: absolute;
+      left: 10px;
+    }
+    .post {
+      position: absolute;
+      right: -30px;
+      top: -32px;
+    }
+  }
+  &__img {
+    width: 467px;
+    height: 351px;
+  }
+}
