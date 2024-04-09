@@ -45,3 +45,29 @@
     height: 351px;
   }
 }
+@media screen and (max-width: 900px) {
+  .subscribe {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 38px;
+    &__txt {
+      margin: 0;
+      h2 {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.6;
+      }
+      p {
+        width: 300px;
+        margin: 20px auto;
+        text-align: center;
+      }
+    }
+    &__input {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -64,3 +64,19 @@
     font-size: 16px;
   }
 }
+@media screen and (max-width: 900px) {
+  .footer {
+    &-info {
+      width: 100%;
+    }
+    padding: 0 30px;
+    &-box {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+    &__download {
+      margin-top: 20px;
+    }
+  }
+}

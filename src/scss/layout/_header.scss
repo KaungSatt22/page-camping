@@ -1,8 +1,9 @@
 .l-header {
   position: fixed;
   width: 80%;
-  padding: 50px 0;
-  @include fbox(row, center, space-between);
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
   &__hamburger {
     display: none;
   }
@@ -30,7 +31,7 @@
           width: 0%;
           height: 3px;
           background-color: $colorBrown;
-          transition: width 0.5s ease-in-out;
+          transition: width 0.5s ease;
         }
         &:hover {
           &::after {
@@ -52,6 +53,81 @@
     .active {
       border: 2px solid $colorWhite;
       border-radius: 50px;
+    }
+  }
+}
+.show.l-header {
+  .l-header__navbar {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .l-header {
+    width: 100%;
+    padding: 50px;
+    &__navbar {
+      transition: all 1s ease-in-out;
+      position: absolute;
+      top: 85px;
+      right: -600px;
+      ul {
+        background-color: $colorWhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 320px;
+        gap: 10px;
+        border-radius: 20px;
+        padding: 20px;
+        li {
+          width: 100%;
+
+          a {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: $colorBlack;
+
+            &::hover {
+              border-color: $colorSalmon;
+            }
+          }
+        }
+      }
+    }
+    &__login {
+      display: none;
+    }
+    &__hamburger {
+      cursor: pointer;
+      display: block;
+      background-color: $colorWhite;
+      padding: 20px;
+      border-radius: 50px;
+      .line {
+        background-color: $colorBlack;
+        width: 40px;
+        height: 5px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -10px;
+          background-color: $colorBlack;
+          width: 40px;
+          height: 5px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          background-color: $colorBlack;
+          width: 40px;
+          height: 5px;
+        }
+      }
     }
   }
 }
